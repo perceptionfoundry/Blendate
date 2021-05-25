@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		F23C9471265D2AA500B249F4 /* BlendateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C9470265D2AA500B249F4 /* BlendateApp.swift */; };
-		F23C9473265D2AA500B249F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C9472265D2AA500B249F4 /* ContentView.swift */; };
+		F23C9473265D2AA500B249F4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C9472265D2AA500B249F4 /* ProfileView.swift */; };
 		F23C9475265D2AA600B249F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23C9474265D2AA600B249F4 /* Assets.xcassets */; };
 		F23C9478265D2AA600B249F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23C9477265D2AA600B249F4 /* Preview Assets.xcassets */; };
+		F2C547EE265D7AD3009E9861 /* LexendDeca-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2C547ED265D7AD3009E9861 /* LexendDeca-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F23C946D265D2AA500B249F4 /* Blendate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blendate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23C9470265D2AA500B249F4 /* BlendateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendateApp.swift; sourceTree = "<group>"; };
-		F23C9472265D2AA500B249F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F23C9472265D2AA500B249F4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		F23C9474265D2AA600B249F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F23C9477265D2AA600B249F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F23C9479265D2AA600B249F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2C547ED265D7AD3009E9861 /* LexendDeca-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +54,9 @@
 		F23C946F265D2AA500B249F4 /* Blendate */ = {
 			isa = PBXGroup;
 			children = (
-				F23C9470265D2AA500B249F4 /* BlendateApp.swift */,
-				F23C9472265D2AA500B249F4 /* ContentView.swift */,
+				F2C547EC265D7A28009E9861 /* Fonts */,
+				F2C547EA265D2C51009E9861 /* App */,
+				F2C547EB265D2C62009E9861 /* View */,
 				F23C9474265D2AA600B249F4 /* Assets.xcassets */,
 				F23C9479265D2AA600B249F4 /* Info.plist */,
 				F23C9476265D2AA600B249F4 /* Preview Content */,
@@ -67,6 +70,30 @@
 				F23C9477265D2AA600B249F4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F2C547EA265D2C51009E9861 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F23C9470265D2AA500B249F4 /* BlendateApp.swift */,
+				F23C9472265D2AA500B249F4 /* ProfileView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F2C547EB265D2C62009E9861 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2C547EC265D7A28009E9861 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F2C547ED265D7AD3009E9861 /* LexendDeca-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F23C9478265D2AA600B249F4 /* Preview Assets.xcassets in Resources */,
+				F2C547EE265D7AD3009E9861 /* LexendDeca-Regular.ttf in Resources */,
 				F23C9475265D2AA600B249F4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F23C9473265D2AA500B249F4 /* ContentView.swift in Sources */,
+				F23C9473265D2AA500B249F4 /* ProfileView.swift in Sources */,
 				F23C9471265D2AA500B249F4 /* BlendateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
