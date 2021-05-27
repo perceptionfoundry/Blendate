@@ -44,9 +44,12 @@ struct ProfileView: View {
                         .padding(.horizontal, 30)
                         
                         Text("Ronald Richards, 39")
+                            .font(.custom("LexendDeca-Regular.", size: 18))
                             .foregroundColor(.white)
                             .bold()
                         Text("New York, USA")
+                            .font(.custom("LexendDeca-Regular.", size: 14))
+                            .foregroundColor(.gray)
                         
                         HStack {
                             Spacer()
@@ -284,12 +287,13 @@ struct ProfileView: View {
                         ZStack {
                             RoundedRectangle(cornerRadius: 15)
                                             .fill(Color.white)
-                                            .frame(width: UIScreen.main.bounds.width * 0.45, height: 80, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                            .frame(width: UIScreen.main.bounds.width * 0.45, height: 90, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .shadow(color: .gray, radius: 2, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 4)
                             VStack{
                             Text("Travel")
                                 .font(.custom("LexendDeca-Regular.", size: 16))
                                 .foregroundColor(.accentColor)
+                                .padding(.top)
                             Text("Kid Friendly Hotels, Travel Advice, Travel Accessories For Kids")
                                 .font(.custom("LexendDeca-Regular.", size: 10))
                                 .foregroundColor(.gray)
@@ -300,7 +304,7 @@ struct ProfileView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 15)
                                         .fill(Color.white)
-                                        .frame(width: UIScreen.main.bounds.width * 0.45, height: 80, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                        .frame(width: UIScreen.main.bounds.width * 0.45, height: 90, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             .shadow(color: .gray, radius: 2, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 4)
                         VStack{
                         Text("Art")
@@ -321,7 +325,7 @@ struct ProfileView: View {
                             ZStack {
                                 RoundedRectangle(cornerRadius: 15)
                                                 .fill(Color.white)
-                                                .frame(width: UIScreen.main.bounds.width * 0.45, height: 80, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                                .frame(width: UIScreen.main.bounds.width * 0.45, height: 90, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                     .shadow(color: .gray, radius: 2, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 4)
                                 VStack{
                                 Text("Entertainment")
@@ -330,14 +334,14 @@ struct ProfileView: View {
                                 Text("Movies, Music, Gaming, Podcasts, Celebrities")
                                     .font(.custom("LexendDeca-Regular.", size: 10))
                                     .foregroundColor(.gray)
-                                    .frame(width: 160, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    .frame(width: 140, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             }
                             }
                           
                         ZStack {
                             RoundedRectangle(cornerRadius: 15)
                                             .fill(Color.white)
-                                            .frame(width: UIScreen.main.bounds.width * 0.45, height: 80, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                            .frame(width: UIScreen.main.bounds.width * 0.45, height: 90, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .shadow(color: .gray, radius: 2, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 4)
                             VStack{
                             Text("Food")
@@ -354,10 +358,13 @@ struct ProfileView: View {
             }
                 .padding(.horizontal)
                
+                Rectangle()
+                    .fill(Color.white)
+                    .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 130, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 Spacer()
             }
         }
-        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        .edgesIgnoringSafeArea(.top)
         
    
     }
