@@ -16,3 +16,6 @@ struct BlendateApp: App {
         }
     }
 }
+func getRect() -> CGRect{
+    return UIScreen.main.bounds
+}

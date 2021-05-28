@@ -34,7 +34,7 @@ struct AgeView: View {
                             isSegue.toggle()
                         }, label: {
                             Text("Next")
-                                .font(.custom("Montserrat-Regular", size: 16))
+                                .font(.custom("Montserrat-Bold", size: 16))
                                 .foregroundColor(Color("Blue_Color"))
                           
                         })
