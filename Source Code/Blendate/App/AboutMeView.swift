@@ -26,7 +26,7 @@ struct AboutMeView: View {
                 Spacer()
                 
                 NavigationLink(
-                    destination: ProfileView(),
+                    destination: TabMainView(),
                     isActive: $isSegue,
                     label: {
                         Button(action: {

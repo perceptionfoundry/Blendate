@@ -24,7 +24,7 @@ struct AgeRangeView: View {
                 Spacer()
                 
                 NavigationLink(
-                    destination: ChoiceView(),
+                    destination: LocationView(),
                     isActive: $isSegue,
                     label: {
                         Button(action: {
