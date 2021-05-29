@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F20C5499266215DE00EA736C /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C5498266215DE00EA736C /* LocationView.swift */; };
+		F20C549B266217BC00EA736C /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C549A266217BC00EA736C /* InsetMapView.swift */; };
+		F20C549D26621B3F00EA736C /* AboutMeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C549C26621B3F00EA736C /* AboutMeView.swift */; };
+		F20C549F26622D8500EA736C /* AddPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20C549E26622D8500EA736C /* AddPhotoView.swift */; };
 		F211D5BE266125C1000A1EC9 /* HorizontalPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F211D5BD266125C1000A1EC9 /* HorizontalPickerView.swift */; };
 		F211D5C026612690000A1EC9 /* ChildrenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F211D5BF26612690000A1EC9 /* ChildrenView.swift */; };
 		F211D5C226614530000A1EC9 /* AgeRangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F211D5C126614530000A1EC9 /* AgeRangeView.swift */; };
@@ -46,6 +50,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F20C5498266215DE00EA736C /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		F20C549A266217BC00EA736C /* InsetMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
+		F20C549C26621B3F00EA736C /* AboutMeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeView.swift; sourceTree = "<group>"; };
+		F20C549E26622D8500EA736C /* AddPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoView.swift; sourceTree = "<group>"; };
 		F211D5BD266125C1000A1EC9 /* HorizontalPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPickerView.swift; sourceTree = "<group>"; };
 		F211D5BF26612690000A1EC9 /* ChildrenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrenView.swift; sourceTree = "<group>"; };
 		F211D5C126614530000A1EC9 /* AgeRangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeRangeView.swift; sourceTree = "<group>"; };
@@ -149,6 +157,9 @@
 				F2D77ED8265FCB0D00E311CF /* ChoiceView.swift */,
 				F211D5BF26612690000A1EC9 /* ChildrenView.swift */,
 				F211D5C126614530000A1EC9 /* AgeRangeView.swift */,
+				F20C5498266215DE00EA736C /* LocationView.swift */,
+				F20C549E26622D8500EA736C /* AddPhotoView.swift */,
+				F20C549C26621B3F00EA736C /* AboutMeView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -156,6 +167,7 @@
 		F2C547EB265D2C62009E9861 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F20C549A266217BC00EA736C /* InsetMapView.swift */,
 				F2A032DC265E2F9B00CFB7EC /* CustomTabView.swift */,
 				F2A032DE265E2FE000CFB7EC /* TabButton.swift */,
 				F211D5BD266125C1000A1EC9 /* HorizontalPickerView.swift */,
@@ -280,12 +292,16 @@
 			files = (
 				F211D5BE266125C1000A1EC9 /* HorizontalPickerView.swift in Sources */,
 				F2A032E5265E30B500CFB7EC /* FavoriteView.swift in Sources */,
+				F20C549D26621B3F00EA736C /* AboutMeView.swift in Sources */,
 				F211D5C026612690000A1EC9 /* ChildrenView.swift in Sources */,
 				F2A032DB265E2F0D00CFB7EC /* TabMainView.swift in Sources */,
 				F2D77ED9265FCB0D00E311CF /* ChoiceView.swift in Sources */,
 				F2FED128265F484B00A08A91 /* NameView.swift in Sources */,
+				F20C549F26622D8500EA736C /* AddPhotoView.swift in Sources */,
 				F2A032E1265E305400CFB7EC /* DashboardView.swift in Sources */,
+				F20C5499266215DE00EA736C /* LocationView.swift in Sources */,
 				F23C9473265D2AA500B249F4 /* ProfileView.swift in Sources */,
+				F20C549B266217BC00EA736C /* InsetMapView.swift in Sources */,
 				F211D5C226614530000A1EC9 /* AgeRangeView.swift in Sources */,
 				F23C9471265D2AA500B249F4 /* BlendateApp.swift in Sources */,
 				F2FED12A265F7B7B00A08A91 /* AgeView.swift in Sources */,
