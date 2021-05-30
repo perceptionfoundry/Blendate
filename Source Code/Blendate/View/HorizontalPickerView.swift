@@ -37,7 +37,7 @@ struct HorizontalPickerView<Content: View>:UIViewRepresentable {
         let width  = CGFloat((pickerCount * 5) * 20) + (getRect().width - 30_)
         
         swiftUIView.frame = CGRect(x: 0, y: 0, width: width, height: 50)
-        
+        swiftUIView.backgroundColor = .clear
         scrollView.contentSize = swiftUIView.frame.size
         scrollView.addSubview(swiftUIView)
         scrollView.bounces = false
