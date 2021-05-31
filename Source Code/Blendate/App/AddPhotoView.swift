@@ -9,8 +9,11 @@ import SwiftUI
 
 struct AddPhotoView: View {
     
-    
+    @State var showImagePicker: Bool = false
     @State var isSegue = false
+    @State var profileDP: UIImage? = UIImage(named: "Add Image")
+    @State var coverDP: UIImage? = UIImage(named: "Add Image")
+    @State var selectedImage = ""
     var body: some View {
         
         VStack{
@@ -54,11 +57,18 @@ struct AddPhotoView: View {
                         .foregroundColor(Color("Blue_Color"))
                         .font(.custom("Montserrat-Regular", size: 14))
                         .padding(.bottom, 1)
-                    Image("Add Image")
-                        .resizable()
-                        .frame(width: 160, height: 214, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        .scaledToFill()
-                        .clipShape(RoundedRectangle(cornerRadius: 15))
+                    
+                    Button(action: {
+                        selectedImage = "PROFILE"
+                        showImagePicker.toggle()
+                    }, label: {
+                        Image(uiImage: profileDP!)
+                            .resizable()
+                            .frame(width: 160, height: 214, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .scaledToFill()
+                            .clipShape(RoundedRectangle(cornerRadius: 15))
+                    })
+                   
                 }
                 .padding(.trailing)
                 
@@ -67,11 +77,17 @@ struct AddPhotoView: View {
                         .foregroundColor(Color("Blue_Color"))
                         .font(.custom("Montserrat-Regular", size: 14))
                         .padding(.bottom, 1)
-                    Image("Add Image")
-                        .resizable()
-                        .frame(width: 160, height: 214, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        .scaledToFill()
-                        .clipShape(RoundedRectangle(cornerRadius: 15))
+                   
+                    Button(action: {
+                        selectedImage = "COVER"
+                        showImagePicker.toggle()
+                    }, label: {
+                        Image(uiImage: coverDP!)
+                            .resizable()
+                            .frame(width: 160, height: 214, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .scaledToFill()
+                            .clipShape(RoundedRectangle(cornerRadius: 15))
+                    })
                 }
             }
             .padding()
@@ -130,6 +146,16 @@ struct AddPhotoView: View {
                 }
                 
             })
+        .sheet(isPresented: $showImagePicker) {
+            ImagePickerView(sourceType: .photoLibrary) { (getImage) in
+                
+                if selectedImage == "PROFILE"{
+                self.profileDP = getImage
+                }else if selectedImage == "COVER"{
+                    self.coverDP = getImage
+                }
+            }
+        }
         .navigationBarBackButtonHidden(true)
         .navigationBarHidden(true)
                        

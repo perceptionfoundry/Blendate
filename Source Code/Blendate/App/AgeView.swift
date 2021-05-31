@@ -182,6 +182,21 @@ struct AgeView: View {
                 }
                 
             })
+        .onAppear(){
+            
+            let today = Date()
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd HH:mm:ss 'UTC'"
+          
+
+            formatter.dateFormat = "yyyy"
+            yearValue = formatter.string(from: today)
+            formatter.dateFormat = "MMMM"
+            monthValue = formatter.string(from: today)
+            formatter.dateFormat = "dd"
+            dateValue = formatter.string(from: today)
+            
+        }
         .navigationBarBackButtonHidden(true)
         .navigationBarHidden(true)
                        
