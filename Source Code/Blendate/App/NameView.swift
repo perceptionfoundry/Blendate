@@ -17,17 +17,10 @@ struct NameView: View {
         
         NavigationView{
             VStack{
-//                HStack {
-//                    Button(action: {
-//                        
-//                    }, label: {
-//                        Image("Back_Arrow")
-//                })
-//                    Spacer()
-//                }.padding(.horizontal)
                 Text("What is your Name")
                     .font(.custom("LexendDeca-Regular", size: 32))
                     .foregroundColor(.white)
+                    .padding(.top, 30)
                 
                 TFView(placeholder: "First Name", field: $firstName)
                     
@@ -82,8 +75,9 @@ struct NameView: View {
                 }
                 
             })
-        }.navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
+        }
     }
 }
 

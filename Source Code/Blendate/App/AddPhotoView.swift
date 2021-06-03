@@ -45,7 +45,7 @@ struct AddPhotoView: View {
             .padding(.top)
             
        
-                Text("Add Photos")
+            ScrollView{ VStack  {Text("Add Photos")
                     .font(.custom("Montserrat-SemiBold", size: 32))
                     .foregroundColor(Color("Blue_Color"))
                     .padding(.top, 20)
@@ -119,14 +119,15 @@ struct AddPhotoView: View {
                     .foregroundColor(Color.white)
                     .font(.custom("Montserrat-Regular", size: 14))
             }
-        
+                Spacer()
+                  
+                  Text("As part of our Community Guidelines; pictures of minors are prohibited, unless accompanied by an adult")
+                      .foregroundColor(Color.white)
+                      .multilineTextAlignment(.center)
+                      .font(.custom("Montserrat-Regular", size: 10))
+              }}
           
-          Spacer()
-            
-            Text("As part of our Community Guidelines; pictures of minors are prohibited, unless accompanied by an adult")
-                .foregroundColor(Color.white)
-                .multilineTextAlignment(.center)
-                .font(.custom("Montserrat-Regular", size: 14))
+     
         }.background(
         BottomBackgroundlayoutView(imageTitle:"")
         )

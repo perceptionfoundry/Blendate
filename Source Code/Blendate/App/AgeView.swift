@@ -20,7 +20,7 @@ struct AgeView: View {
     
     var body: some View {
         
-        VStack{
+        ScrollView{VStack{
             HStack {
                 Button(action: {
                     presentationMode.wrappedValue.dismiss()
@@ -160,7 +160,7 @@ struct AgeView: View {
           
           
           
-        }.background(
+        }}.background(
             BottomBackgroundlayoutView(imageTitle: "Birthday")
                 )
         .onAppear(){

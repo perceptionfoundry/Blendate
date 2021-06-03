@@ -100,7 +100,7 @@ struct PoliticView: View {
                 })
             }
             
-            Toggle("Show on Profile", isOn: .constant(true))
+            Toggle("Show on Profile", isOn: .constant(true)).foregroundColor(.gray)
                 .padding()
             
             Spacer()

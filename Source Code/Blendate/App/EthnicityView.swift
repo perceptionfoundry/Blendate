@@ -54,13 +54,13 @@ struct EthnicityView: View {
                     ZStack{
                         Capsule()
                             .fill(Color.white)
-                            .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(width: 160, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
                         Text("Pacific Islander")
                             .font(.custom("Montserrat-Regular", size: 14))
                             .foregroundColor(Color("Blue_Color"))
                     }
-                }).padding(.trailing)
+                })
                 
                 Button(action: {isSegue.toggle()}, label: {
                     ZStack{
@@ -82,13 +82,13 @@ struct EthnicityView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 130, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("East Asian")
                                 .font(.custom("Montserrat-Regular", size: 14))
                                 .foregroundColor(Color("Blue_Color"))
                         }
-                    }).padding(.trailing)
+                    })
                     
                     Button(action: {isSegue.toggle()}, label: {
                         ZStack{
@@ -111,19 +111,19 @@ struct EthnicityView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 130, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("South Asian")
                                 .font(.custom("Montserrat-Regular", size: 14))
                                 .foregroundColor(Color("Blue_Color"))
                         }
-                    }).padding(.trailing)
+                    })
                     
                     Button(action: {isSegue.toggle()}, label: {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 160, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Native American")
                                 .font(.custom("Montserrat-Regular", size: 14))
@@ -139,19 +139,19 @@ struct EthnicityView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 160, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("White/Caucasian")
                                 .font(.custom("Montserrat-Regular", size: 14))
                                 .foregroundColor(Color("Blue_Color"))
                         }
-                    }).padding(.trailing)
+                    })
                     
                     Button(action: {isSegue.toggle()}, label: {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 160, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Middle Eastern")
                                 .font(.custom("Montserrat-Regular", size: 14))
@@ -168,19 +168,19 @@ struct EthnicityView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 130, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Open to all")
                                 .font(.custom("Montserrat-Regular", size: 14))
                                 .foregroundColor(Color("Blue_Color"))
                         }
-                    }).padding(.trailing)
+                    })
                     
                     
                    
                 }
             }.padding()
-            Toggle("Show on Profile", isOn: .constant(true))
+            Toggle("Show on Profile", isOn: .constant(true)).foregroundColor(.gray)
                 .padding()
             
             Spacer()

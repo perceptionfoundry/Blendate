@@ -203,10 +203,10 @@
 		F2C547EB265D2C62009E9861 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F21A351126652B160094989C /* ImagePickerView.swift */,
-				F20C549A266217BC00EA736C /* InsetMapView.swift */,
 				F2A032DC265E2F9B00CFB7EC /* CustomTabView.swift */,
 				F2A032DE265E2FE000CFB7EC /* TabButton.swift */,
+				F21A351126652B160094989C /* ImagePickerView.swift */,
+				F20C549A266217BC00EA736C /* InsetMapView.swift */,
 				F211D5BD266125C1000A1EC9 /* HorizontalPickerView.swift */,
 				F27D81322668D7FB002E5727 /* BottomBackgroundlayoutView.swift */,
 				F27D81342668D8E3002E5727 /* TopBackgroundlayoutView.swift */,

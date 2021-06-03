@@ -84,7 +84,7 @@ struct MobilityView: View {
                         .foregroundColor(Color("Blue_Color"))
                 }
             })
-            Toggle("Show on Profile", isOn: .constant(true))
+            Toggle("Show on Profile", isOn: .constant(true)).foregroundColor(.gray)
                 .padding()
             Spacer()
           

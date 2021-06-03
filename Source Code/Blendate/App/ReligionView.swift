@@ -56,22 +56,10 @@ struct ReligionView: View {
                     ZStack{
                         Capsule()
                             .fill(Color.white)
-                            .frame(width: 120, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(width: 100, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
                         Text("Hindu")
-                            .font(.custom("Montserrat-Regular", size: 18))
-                            .foregroundColor(Color("Blue_Color"))
-                    }
-                }).padding(.trailing)
-                
-                Button(action: {isSegue.toggle()}, label: {
-                    ZStack{
-                        Capsule()
-                            .fill(Color.white)
-                            .frame(width: 120, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        
-                        Text("Buddist")
-                            .font(.custom("Montserrat-Regular", size: 18))
+                            .font(.custom("Montserrat-Regular", size: 14))
                             .foregroundColor(Color("Blue_Color"))
                     }
                 })
@@ -80,10 +68,22 @@ struct ReligionView: View {
                     ZStack{
                         Capsule()
                             .fill(Color.white)
-                            .frame(width: 120, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(width: 100, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        
+                        Text("Buddist")
+                            .font(.custom("Montserrat-Regular", size: 14))
+                            .foregroundColor(Color("Blue_Color"))
+                    }
+                })
+                
+                Button(action: {isSegue.toggle()}, label: {
+                    ZStack{
+                        Capsule()
+                            .fill(Color.white)
+                            .frame(width: 100, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
                         Text("Jewish")
-                            .font(.custom("Montserrat-Regular", size: 18))
+                            .font(.custom("Montserrat-Regular", size: 14))
                             .foregroundColor(Color("Blue_Color"))
                     }
                 })
@@ -94,22 +94,10 @@ struct ReligionView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 120, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 100, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Christian")
-                                .font(.custom("Montserrat-Regular", size: 18))
-                                .foregroundColor(Color("Blue_Color"))
-                        }
-                    }).padding(.trailing)
-                    
-                    Button(action: {isSegue.toggle()}, label: {
-                        ZStack{
-                            Capsule()
-                                .fill(Color.white)
-                                .frame(width: 120, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            
-                            Text("Catholic")
-                                .font(.custom("Montserrat-Regular", size: 18))
+                                .font(.custom("Montserrat-Regular", size: 14))
                                 .foregroundColor(Color("Blue_Color"))
                         }
                     })
@@ -118,10 +106,22 @@ struct ReligionView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 120, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 100, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            
+                            Text("Catholic")
+                                .font(.custom("Montserrat-Regular", size: 14))
+                                .foregroundColor(Color("Blue_Color"))
+                        }
+                    })
+                    
+                    Button(action: {isSegue.toggle()}, label: {
+                        ZStack{
+                            Capsule()
+                                .fill(Color.white)
+                                .frame(width: 100, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Islam")
-                                .font(.custom("Montserrat-Regular", size: 18))
+                                .font(.custom("Montserrat-Regular", size: 14))
                                 .foregroundColor(Color("Blue_Color"))
                         }
                     })
@@ -132,22 +132,22 @@ struct ReligionView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 140, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 120, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Nonreligious")
-                                .font(.custom("Montserrat-Regular", size: 18))
+                                .font(.custom("Montserrat-Regular", size: 14))
                                 .foregroundColor(Color("Blue_Color"))
                         }
-                    }).padding(.trailing)
+                    })
                     
                     Button(action: {isSegue.toggle()}, label: {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 200, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 160, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Chinese Traditional")
-                                .font(.custom("Montserrat-Regular", size: 18))
+                                .font(.custom("Montserrat-Regular", size: 14))
                                 .foregroundColor(Color("Blue_Color"))
                         }
                     })
@@ -164,19 +164,7 @@ struct ReligionView: View {
                                 .frame(width: 120, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Muslim")
-                                .font(.custom("Montserrat-Regular", size: 18))
-                                .foregroundColor(Color("Blue_Color"))
-                        }
-                    }).padding(.trailing)
-                    
-                    Button(action: {isSegue.toggle()}, label: {
-                        ZStack{
-                            Capsule()
-                                .fill(Color.white)
-                                .frame(width: 120, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            
-                            Text("Sikhism")
-                                .font(.custom("Montserrat-Regular", size: 18))
+                                .font(.custom("Montserrat-Regular", size: 14))
                                 .foregroundColor(Color("Blue_Color"))
                         }
                     })
@@ -185,23 +173,34 @@ struct ReligionView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 120, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 100, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            
+                            Text("Sikhism")
+                                .font(.custom("Montserrat-Regular", size: 14))
+                                .foregroundColor(Color("Blue_Color"))
+                        }
+                    })
+                    
+                    Button(action: {isSegue.toggle()}, label: {
+                        ZStack{
+                            Capsule()
+                                .fill(Color.white)
+                                .frame(width: 100, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Other")
-                                .font(.custom("Montserrat-Regular", size: 18))
+                                .font(.custom("Montserrat-Regular", size: 14))
                                 .foregroundColor(Color("Blue_Color"))
                         }
                     })
                 }
                 
             }.padding()
-            Toggle("Show on Profile", isOn: .constant(true))
+            Toggle("Show on Profile", isOn: .constant(true)).foregroundColor(.gray)
                 .padding()
-           
-            
-            
+        
         }
-        .frame(maxWidth: .infinity, maxHeight:.infinity)
+        
+        
         .background(
         TopBackgroundlayoutView(imageTitle: "Religion"))
         .navigationBarBackButtonHidden(true)

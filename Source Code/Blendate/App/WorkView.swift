@@ -41,14 +41,36 @@ struct WorkView: View {
             }.padding(.horizontal)
             .padding(.top)
             
-            Text("Work")
-                .font(.custom("Montserrat-SemiBold", size: 32))
-                .foregroundColor(Color("Blue_Color"))
-                .padding(.top, 65)
-                .multilineTextAlignment(.center)
-                .frame(width: 300, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            VStack {
+                Text("Work")
+                    .font(.custom("Montserrat-SemiBold", size: 32))
+                    .foregroundColor(Color("Blue_Color"))
+                    .padding(.top, 40)
+                    .multilineTextAlignment(.center)
+                    .frame(width: 300, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                
+                Text("What is your job title?")
+                    .font(.custom("Montserrat-Regular", size: 16))
+                    .foregroundColor(Color("Blue_Color"))
+                    .padding(.top,5)
+                    .multilineTextAlignment(.center)
+                    .frame(width: getRect().width * 0.556, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            }
             
-            Toggle("Show on Profile", isOn: .constant(true))
+            ZStack {
+                RoundedRectangle(cornerRadius: 6)
+                    .fill(Color.white)
+                    .frame(width: getRect().width * 0.9, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                TextField("", text: .constant(""))
+                    
+            }
+            .background(
+            RoundedRectangle(cornerRadius: 6)
+                .stroke(Color(#colorLiteral(red: 0.8280140758, green: 0.8503483534, blue: 0.941247642, alpha: 1)))
+                .frame(width: getRect().width * 0.91, height: 41, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)  
+            )
+            
+            Toggle("Show on Profile", isOn: .constant(true)).foregroundColor(.gray)
                 .padding()
             Spacer()
           

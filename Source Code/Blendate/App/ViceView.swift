@@ -47,14 +47,15 @@ struct ViceView: View {
                 .multilineTextAlignment(.center)
         .padding(.top, 40)
         .padding(.bottom, 20)
-            
+         
+            ScrollView{
             VStack(spacing: 20){
             HStack{
                 Button(action: {isSegue.toggle()}, label: {
                     ZStack{
                         Capsule()
                             .fill(Color.white)
-                            .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(width: 130, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
                         Text("Alcohol")
                             .font(.custom("Montserrat-Regular", size: 14))
@@ -82,7 +83,7 @@ struct ViceView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 150, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Marijuana")
                                 .font(.custom("Montserrat-Regular", size: 14))
@@ -94,7 +95,7 @@ struct ViceView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 150, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Tobacco")
                                 .font(.custom("Montserrat-Regular", size: 14))
@@ -111,7 +112,7 @@ struct ViceView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 150, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Psychedelics")
                                 .font(.custom("Montserrat-Regular", size: 14))
@@ -123,7 +124,7 @@ struct ViceView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 150, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Sleeping in")
                                 .font(.custom("Montserrat-Regular", size: 14))
@@ -139,7 +140,7 @@ struct ViceView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 130, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Nail Biter")
                                 .font(.custom("Montserrat-Regular", size: 14))
@@ -151,7 +152,7 @@ struct ViceView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 150, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Coffee drinker")
                                 .font(.custom("Montserrat-Regular", size: 14))
@@ -167,7 +168,7 @@ struct ViceView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 150, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Procrastinator")
                                 .font(.custom("Montserrat-Regular", size: 14))
@@ -179,7 +180,7 @@ struct ViceView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 150, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Chocolate")
                                 .font(.custom("Montserrat-Regular", size: 14))
@@ -195,7 +196,7 @@ struct ViceView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 150, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Sun tanning")
                                 .font(.custom("Montserrat-Regular", size: 14))
@@ -207,7 +208,7 @@ struct ViceView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 150, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Gambling")
                                 .font(.custom("Montserrat-Regular", size: 14))
@@ -223,7 +224,7 @@ struct ViceView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 150, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Shopping")
                                 .font(.custom("Montserrat-Regular", size: 14))
@@ -235,7 +236,7 @@ struct ViceView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 150, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Exercising")
                                 .font(.custom("Montserrat-Regular", size: 14))
@@ -251,7 +252,7 @@ struct ViceView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 150, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Book Worm")
                                 .font(.custom("Montserrat-Regular", size: 14))
@@ -263,7 +264,7 @@ struct ViceView: View {
                         ZStack{
                             Capsule()
                                 .fill(Color.white)
-                                .frame(width: 180, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 150, height: 45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             
                             Text("Open to all")
                                 .font(.custom("Montserrat-Regular", size: 14))
@@ -274,7 +275,8 @@ struct ViceView: View {
                    
                 }
             }.padding()
-            Toggle("Show on Profile", isOn: .constant(true))
+        }
+            Toggle("Show on Profile", isOn: .constant(true)).foregroundColor(.gray)
                 .padding()
             
             Spacer()

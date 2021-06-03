@@ -91,7 +91,7 @@ struct MoreKidView: View {
                 
                
             }
-            Toggle("Show on Profile", isOn: .constant(true))
+            Toggle("Show on Profile", isOn: .constant(true)).foregroundColor(.gray)
                 .padding()
             
             Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)

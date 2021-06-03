@@ -15,7 +15,7 @@ struct AgeRangeView: View {
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
-        
+       
         VStack{
             HStack {
                 Button(action: {
@@ -41,9 +41,10 @@ struct AgeRangeView: View {
 
             }.padding(.horizontal)
             .padding(.top)
+            .padding(.bottom, 30)
             Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
        
-            Text("Children’s age range")
+            ScrollView{VStack { Text("Children’s age range")
                 .font(.custom("Montserrat-SemiBold", size: 28))
                 .foregroundColor(Color("Blue_Color"))
                 .padding(.top, 65)
@@ -177,13 +178,14 @@ struct AgeRangeView: View {
                     .padding()
                 }
         }
-            Toggle("Show on Profile", isOn: .constant(true))
-                .padding()
+            Toggle("Show on Profile", isOn: .constant(true)).foregroundColor(.gray)
+                .padding()}}
             Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
             
             
         }
         .frame(maxWidth: .infinity, maxHeight:.infinity)
+  
         .background(
             TopBackgroundlayoutView(imageTitle: "Family")
         )
