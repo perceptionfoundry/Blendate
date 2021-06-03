@@ -15,12 +15,15 @@ struct AgeView: View {
     @State var dateValue = "21"
     @State var yearValue = "2021"
     @State var isSegue = false
+    
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         
         VStack{
             HStack {
                 Button(action: {
-                    
+                    presentationMode.wrappedValue.dismiss()
                 }, label: {
                     Image("Back_Arrow_Blue")
             })
@@ -158,30 +161,8 @@ struct AgeView: View {
           
           
         }.background(
-            ZStack{
-                
-                Color("BG_Color")
-                    .ignoresSafeArea()
-                VStack{
-                    Spacer()
-                ZStack(alignment:.center){
-                
-                    
-                    Image("Ellipse_Bottom")
-                        .resizable()
-                        .scaledToFill()
-                        .ignoresSafeArea()
-                        .frame(height: UIScreen.main.bounds.height * 0.5, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        
-                    Image("Birthday")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 270, height: 226 , alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                }
-                    
-                }
-                
-            })
+            BottomBackgroundlayoutView(imageTitle: "Birthday")
+                )
         .onAppear(){
             
             let today = Date()
@@ -208,3 +189,5 @@ struct AgeView_Previews: PreviewProvider {
         AgeView()
     }
 }
+
+

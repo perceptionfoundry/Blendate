@@ -10,17 +10,30 @@ import SwiftUI
 struct ChoiceView: View {
     
     @State var isSegue = false
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
-        
         
         VStack{
             HStack {
                 Button(action: {
-                    
+                    presentationMode.wrappedValue.dismiss()
                 }, label: {
                     Image("Back_Arrow")
             })
                 Spacer()
+                NavigationLink(
+                    destination: ChildrenView(),
+                    isActive: $isSegue,
+                    label: {
+                        Button(action: {
+                           
+                        }, label: {
+                            Text("")
+                                .font(.custom("Montserrat-Bold", size: 16))
+                                .foregroundColor(Color.white)
+                          
+                        })
+                    })
             }.padding(.horizontal)
             .padding(.top)
             Spacer()
@@ -33,10 +46,7 @@ struct ChoiceView: View {
                 .padding(.top, 150)
             
             
-            NavigationLink(
-                destination: ChildrenView(),
-                isActive: $isSegue,
-                label: {
+          
                     VStack(spacing: 30){
                     HStack{
                         Button(action: {isSegue.toggle()}, label: {
@@ -104,36 +114,13 @@ struct ChoiceView: View {
                         
                     }
                         }
-                })
+              
                 
            
             Spacer()
            
         }.background(
-            ZStack{
-                
-                Color("BG_Color")
-                    .ignoresSafeArea()
-                VStack{
-                  
-                ZStack(alignment:.center){
-                
-                    
-                    Image("Ellipse_Top")
-                        .resizable()
-                        .scaledToFill()
-                        .ignoresSafeArea()
-                        .frame(height: UIScreen.main.bounds.height * 0.45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        
-                    Image("Family")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 270, height: 226 , alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                }
-                    Spacer()
-                }
-                
-            })
+            TopBackgroundlayoutView(imageTitle: "Family"))
     
         .navigationBarBackButtonHidden(true)
         .navigationBarHidden(true)
@@ -146,3 +133,4 @@ struct ChoiceView_Previews: PreviewProvider {
         ChoiceView()
     }
 }
+

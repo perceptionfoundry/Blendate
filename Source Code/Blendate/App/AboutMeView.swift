@@ -13,15 +13,16 @@ struct AboutMeView: View {
     
     @State private var message = ""
     @State private var textStyle = UIFont(name: "Montserrat-Regular", size: 12)
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
-        
         
         VStack{
             HStack {
                 Button(action: {
-                    
+                    presentationMode.wrappedValue.dismiss()
                 }, label: {
-                    Image("Back_Arrow")
+                    Image("Back_Arrow_Blue")
             })
                 Spacer()
                 

@@ -12,12 +12,14 @@ struct AgeRangeView: View {
     @State var fromValue : CGFloat = 0
     @State var toValue : CGFloat = 0
 
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
-        VStack(spacing: 15){
-           
+        
+        VStack{
             HStack {
                 Button(action: {
-                    
+                    presentationMode.wrappedValue.dismiss()
                 }, label: {
                     Image("Back_Arrow")
             })
@@ -183,30 +185,8 @@ struct AgeRangeView: View {
         }
         .frame(maxWidth: .infinity, maxHeight:.infinity)
         .background(
-            ZStack{
-                
-                Color("BG_Color")
-                    .ignoresSafeArea()
-                VStack{
-                  
-                ZStack(alignment:.center){
-                
-                    
-                    Image("Ellipse_Top")
-                        .resizable()
-                        .scaledToFill()
-                        .ignoresSafeArea()
-                        .frame(height: UIScreen.main.bounds.height * 0.45, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        
-                    Image("Family")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 270, height: 226 , alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                }
-                    Spacer()
-                }
-                
-            })
+            TopBackgroundlayoutView(imageTitle: "Family")
+        )
         .navigationBarBackButtonHidden(true)
         .navigationBarHidden(true)
         

@@ -14,19 +14,21 @@ struct AddPhotoView: View {
     @State var profileDP: UIImage? = UIImage(named: "Add Image")
     @State var coverDP: UIImage? = UIImage(named: "Add Image")
     @State var selectedImage = ""
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         
         VStack{
             HStack {
                 Button(action: {
-                    
+                    presentationMode.wrappedValue.dismiss()
                 }, label: {
                     Image("Back_Arrow_Blue")
             })
                 Spacer()
                 
                 NavigationLink(
-                    destination: AboutMeView(),
+                    destination: LookingView(),
                     isActive: $isSegue,
                     label: {
                         Button(action: {
@@ -126,26 +128,8 @@ struct AddPhotoView: View {
                 .multilineTextAlignment(.center)
                 .font(.custom("Montserrat-Regular", size: 14))
         }.background(
-            ZStack{
-                
-                Color("BG_Color")
-                    .ignoresSafeArea()
-                VStack{
-                    Spacer()
-                ZStack(alignment:.center){
-                
-                    
-                    Image("Ellipse_Bottom")
-                        .resizable()
-                        .scaledToFill()
-                        .ignoresSafeArea()
-                        .frame(height: UIScreen.main.bounds.height * 0.5, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        
-                }
-                    
-                }
-                
-            })
+        BottomBackgroundlayoutView(imageTitle:"")
+        )
         .sheet(isPresented: $showImagePicker) {
             ImagePickerView(sourceType: .photoLibrary) { (getImage) in
                 
