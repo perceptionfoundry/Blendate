@@ -61,10 +61,12 @@ struct EducationView: View {
             ZStack {
                 RoundedRectangle(cornerRadius: 6)
                     .fill(Color.white)
-                    .frame(width: getRect().width * 0.9, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
                 TextField("", text: .constant(""))
+                    .padding(.horizontal)
                     
             }
+            .frame(width: getRect().width * 0.9, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             .background(
             RoundedRectangle(cornerRadius: 6)
                 .stroke(Color(#colorLiteral(red: 0.8280140758, green: 0.8503483534, blue: 0.941247642, alpha: 1)))
