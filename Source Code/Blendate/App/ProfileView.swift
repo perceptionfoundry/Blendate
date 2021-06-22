@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
+    @State var isHelp = false
+    
     var body: some View {
         
         ScrollView{
@@ -53,10 +56,18 @@ struct ProfileView: View {
                         
                         HStack {
                             Spacer()
-                            ProfileButtonView(title: "Help Center", icon: "Info", actionFunc: {
-                                print("**** HElP ****")
-                            })
-                            .padding()
+                            
+                            NavigationLink(
+                                destination: HelpCenterView(),
+                                isActive: $isHelp,
+                                label: {
+                                    ProfileButtonView(title: "Help Center", icon: "Info", actionFunc: {
+                                    
+                                        isHelp.toggle()
+                                    })
+                                    .padding()
+                                })
+                            
                             
                             Rectangle()
                                 .fill(Color.white)

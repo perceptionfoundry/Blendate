@@ -35,7 +35,7 @@ struct NameView: View {
           
                 Spacer()
                 NavigationLink(
-                    destination: AgeView(),
+                    destination: TabMainView(), //AgeView()
                     isActive: $isSegue,
                     label: {
                         Button(action: {

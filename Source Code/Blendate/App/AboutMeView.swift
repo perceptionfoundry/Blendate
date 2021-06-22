@@ -22,19 +22,19 @@ struct AboutMeView: View {
                 Button(action: {
                     presentationMode.wrappedValue.dismiss()
                 }, label: {
-                    Image("Back_Arrow_Blue")
+                    Image("Back_Arrow")
             })
                 Spacer()
                 
                 NavigationLink(
-                    destination: TabMainView(),
+                    destination: HeightView(),
                     isActive: $isSegue,
                     label: {
                         Button(action: {
                             isSegue.toggle()
                         }, label: {
-                            Text("SAVE")
-                                .font(.custom("Montserrat-Bold", size: 16))
+                            Text("Next")
+                                .font(.custom("Montserrat-Regular", size: 16))
                                 .foregroundColor(Color.white)
                           
                         })

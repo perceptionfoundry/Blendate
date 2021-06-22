@@ -28,7 +28,7 @@ struct CustomTabView: View {
                 ProfileView()
                     .tag("Profile")
             }
-            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+//            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             .ignoresSafeArea(.all, edges: /*@START_MENU_TOKEN@*/.bottom/*@END_MENU_TOKEN@*/)
             
             
@@ -40,10 +40,11 @@ struct CustomTabView: View {
                  Spacer()
                 }
             }
-//            .padding(.horizontal, 5)
-            .padding(.vertical,10)
+//            .padding(.horizontal, 15)
+            .padding(.vertical,5)
             .background(Color(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)))
             .clipShape(Capsule())
+            .shadow(radius: 2)
         }.padding()
        
     }

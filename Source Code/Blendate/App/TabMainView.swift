@@ -14,10 +14,9 @@ struct TabMainView: View {
     
         VStack {
             CustomTabView()
-    
         }
         .padding()
-        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        .edgesIgnoringSafeArea(.all)
         .navigationBarHidden(true)
         .navigationBarBackButtonHidden(true)
     }

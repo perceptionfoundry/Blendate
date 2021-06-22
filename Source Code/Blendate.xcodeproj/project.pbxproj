@@ -14,11 +14,15 @@
 		F211D5BE266125C1000A1EC9 /* HorizontalPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F211D5BD266125C1000A1EC9 /* HorizontalPickerView.swift */; };
 		F211D5C026612690000A1EC9 /* ChildrenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F211D5BF26612690000A1EC9 /* ChildrenView.swift */; };
 		F211D5C226614530000A1EC9 /* AgeRangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F211D5C126614530000A1EC9 /* AgeRangeView.swift */; };
+		F21643912681BADB00FD8544 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21643902681BADB00FD8544 /* CommunityView.swift */; };
+		F21643932681C53000FD8544 /* InterestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21643922681C53000FD8544 /* InterestView.swift */; };
+		F21643972681E61400FD8544 /* HelpCenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21643962681E61400FD8544 /* HelpCenterView.swift */; };
 		F21A351226652B160094989C /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21A351126652B160094989C /* ImagePickerView.swift */; };
 		F23C9471265D2AA500B249F4 /* BlendateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C9470265D2AA500B249F4 /* BlendateApp.swift */; };
 		F23C9473265D2AA500B249F4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23C9472265D2AA500B249F4 /* ProfileView.swift */; };
 		F23C9475265D2AA600B249F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23C9474265D2AA600B249F4 /* Assets.xcassets */; };
 		F23C9478265D2AA600B249F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23C9477265D2AA600B249F4 /* Preview Assets.xcassets */; };
+		F25751862681A38B0058067E /* HeightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25751852681A38B0058067E /* HeightView.swift */; };
 		F27D811F2668C19C002E5727 /* LookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D811E2668C19C002E5727 /* LookingView.swift */; };
 		F27D81212668C277002E5727 /* MoreKidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D81202668C277002E5727 /* MoreKidView.swift */; };
 		F27D81232668C37E002E5727 /* RelationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27D81222668C37E002E5727 /* RelationView.swift */; };
@@ -70,6 +74,9 @@
 		F211D5BD266125C1000A1EC9 /* HorizontalPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalPickerView.swift; sourceTree = "<group>"; };
 		F211D5BF26612690000A1EC9 /* ChildrenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildrenView.swift; sourceTree = "<group>"; };
 		F211D5C126614530000A1EC9 /* AgeRangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeRangeView.swift; sourceTree = "<group>"; };
+		F21643902681BADB00FD8544 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		F21643922681C53000FD8544 /* InterestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestView.swift; sourceTree = "<group>"; };
+		F21643962681E61400FD8544 /* HelpCenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpCenterView.swift; sourceTree = "<group>"; };
 		F21A351126652B160094989C /* ImagePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		F23C946D265D2AA500B249F4 /* Blendate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blendate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23C9470265D2AA500B249F4 /* BlendateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendateApp.swift; sourceTree = "<group>"; };
@@ -77,6 +84,7 @@
 		F23C9474265D2AA600B249F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F23C9477265D2AA600B249F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F23C9479265D2AA600B249F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F25751852681A38B0058067E /* HeightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightView.swift; sourceTree = "<group>"; };
 		F27D811E2668C19C002E5727 /* LookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LookingView.swift; sourceTree = "<group>"; };
 		F27D81202668C277002E5727 /* MoreKidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreKidView.swift; sourceTree = "<group>"; };
 		F27D81222668C37E002E5727 /* RelationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelationView.swift; sourceTree = "<group>"; };
@@ -196,6 +204,10 @@
 				F27D812E2668CD8A002E5727 /* EthnicityView.swift */,
 				F27D81302668CD9C002E5727 /* ViceView.swift */,
 				F20C549C26621B3F00EA736C /* AboutMeView.swift */,
+				F25751852681A38B0058067E /* HeightView.swift */,
+				F21643902681BADB00FD8544 /* CommunityView.swift */,
+				F21643922681C53000FD8544 /* InterestView.swift */,
+				F21643962681E61400FD8544 /* HelpCenterView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -334,6 +346,7 @@
 				F20C549D26621B3F00EA736C /* AboutMeView.swift in Sources */,
 				F211D5C026612690000A1EC9 /* ChildrenView.swift in Sources */,
 				F27D81212668C277002E5727 /* MoreKidView.swift in Sources */,
+				F21643912681BADB00FD8544 /* CommunityView.swift in Sources */,
 				F2A032DB265E2F0D00CFB7EC /* TabMainView.swift in Sources */,
 				F2D77ED9265FCB0D00E311CF /* ChoiceView.swift in Sources */,
 				F2FED128265F484B00A08A91 /* NameView.swift in Sources */,
@@ -345,6 +358,7 @@
 				F20C549B266217BC00EA736C /* InsetMapView.swift in Sources */,
 				F27D81312668CD9C002E5727 /* ViceView.swift in Sources */,
 				F211D5C226614530000A1EC9 /* AgeRangeView.swift in Sources */,
+				F21643972681E61400FD8544 /* HelpCenterView.swift in Sources */,
 				F27D81232668C37E002E5727 /* RelationView.swift in Sources */,
 				F23C9471265D2AA500B249F4 /* BlendateApp.swift in Sources */,
 				F2FED12A265F7B7B00A08A91 /* AgeView.swift in Sources */,
@@ -356,10 +370,12 @@
 				F2A032DF265E2FE000CFB7EC /* TabButton.swift in Sources */,
 				F27D81352668D8E3002E5727 /* TopBackgroundlayoutView.swift in Sources */,
 				F2A032DD265E2F9B00CFB7EC /* CustomTabView.swift in Sources */,
+				F21643932681C53000FD8544 /* InterestView.swift in Sources */,
 				F27D81332668D7FB002E5727 /* BottomBackgroundlayoutView.swift in Sources */,
 				F27D81272668C40E002E5727 /* EducationView.swift in Sources */,
 				F27D811F2668C19C002E5727 /* LookingView.swift in Sources */,
 				F21A351226652B160094989C /* ImagePickerView.swift in Sources */,
+				F25751862681A38B0058067E /* HeightView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
