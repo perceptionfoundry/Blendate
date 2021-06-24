@@ -43,6 +43,8 @@
 		F2A032E5265E30B500CFB7EC /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A032E4265E30B500CFB7EC /* FavoriteView.swift */; };
 		F2A032E8265E645600CFB7EC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A032E7265E645500CFB7EC /* Launch Screen.storyboard */; };
 		F2C547EE265D7AD3009E9861 /* LexendDeca-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2C547ED265D7AD3009E9861 /* LexendDeca-Regular.ttf */; };
+		F2C7609E26844DF8002D70DE /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7609D26844DF8002D70DE /* ChatView.swift */; };
+		F2C760A026847DB2002D70DE /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C7609F26847DB2002D70DE /* SignInView.swift */; };
 		F2D77ED9265FCB0D00E311CF /* ChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D77ED8265FCB0D00E311CF /* ChoiceView.swift */; };
 		F2FED115265F469B00A08A91 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2FED103265F469900A08A91 /* Montserrat-Italic.ttf */; };
 		F2FED116265F469B00A08A91 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2FED104265F469900A08A91 /* Montserrat-Thin.ttf */; };
@@ -105,6 +107,8 @@
 		F2A032E4265E30B500CFB7EC /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		F2A032E7265E645500CFB7EC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F2C547ED265D7AD3009E9861 /* LexendDeca-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LexendDeca-Regular.ttf"; sourceTree = "<group>"; };
+		F2C7609D26844DF8002D70DE /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		F2C7609F26847DB2002D70DE /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		F2D77ED8265FCB0D00E311CF /* ChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceView.swift; sourceTree = "<group>"; };
 		F2FED103265F469900A08A91 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
 		F2FED104265F469900A08A91 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
@@ -181,33 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				F23C9470265D2AA500B249F4 /* BlendateApp.swift */,
-				F2A032DA265E2F0D00CFB7EC /* TabMainView.swift */,
-				F2A032E0265E305400CFB7EC /* DashboardView.swift */,
-				F2A032E2265E309900CFB7EC /* ChatRoomView.swift */,
-				F2A032E4265E30B500CFB7EC /* FavoriteView.swift */,
-				F23C9472265D2AA500B249F4 /* ProfileView.swift */,
-				F2FED127265F484B00A08A91 /* NameView.swift */,
-				F2FED129265F7B7B00A08A91 /* AgeView.swift */,
-				F2D77ED8265FCB0D00E311CF /* ChoiceView.swift */,
-				F211D5BF26612690000A1EC9 /* ChildrenView.swift */,
-				F211D5C126614530000A1EC9 /* AgeRangeView.swift */,
-				F20C5498266215DE00EA736C /* LocationView.swift */,
-				F20C549E26622D8500EA736C /* AddPhotoView.swift */,
-				F27D811E2668C19C002E5727 /* LookingView.swift */,
-				F27D81222668C37E002E5727 /* RelationView.swift */,
-				F27D81202668C277002E5727 /* MoreKidView.swift */,
-				F27D81242668C3C3002E5727 /* WorkView.swift */,
-				F27D81262668C40E002E5727 /* EducationView.swift */,
-				F27D81282668C432002E5727 /* MobilityView.swift */,
-				F27D812C2668C482002E5727 /* ReligionView.swift */,
-				F27D812A2668C44E002E5727 /* PoliticView.swift */,
-				F27D812E2668CD8A002E5727 /* EthnicityView.swift */,
-				F27D81302668CD9C002E5727 /* ViceView.swift */,
-				F20C549C26621B3F00EA736C /* AboutMeView.swift */,
-				F25751852681A38B0058067E /* HeightView.swift */,
-				F21643902681BADB00FD8544 /* CommunityView.swift */,
-				F21643922681C53000FD8544 /* InterestView.swift */,
-				F21643962681E61400FD8544 /* HelpCenterView.swift */,
+				F2C760A2268487A6002D70DE /* Main */,
+				F2C760A126848784002D70DE /* Boarding View */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -250,6 +229,49 @@
 				F2FED10C265F469A00A08A91 /* Montserrat-ThinItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F2C760A126848784002D70DE /* Boarding View */ = {
+			isa = PBXGroup;
+			children = (
+				F2C7609F26847DB2002D70DE /* SignInView.swift */,
+				F2FED127265F484B00A08A91 /* NameView.swift */,
+				F2FED129265F7B7B00A08A91 /* AgeView.swift */,
+				F2D77ED8265FCB0D00E311CF /* ChoiceView.swift */,
+				F211D5BF26612690000A1EC9 /* ChildrenView.swift */,
+				F211D5C126614530000A1EC9 /* AgeRangeView.swift */,
+				F20C5498266215DE00EA736C /* LocationView.swift */,
+				F20C549E26622D8500EA736C /* AddPhotoView.swift */,
+				F27D811E2668C19C002E5727 /* LookingView.swift */,
+				F27D81222668C37E002E5727 /* RelationView.swift */,
+				F27D81202668C277002E5727 /* MoreKidView.swift */,
+				F27D81242668C3C3002E5727 /* WorkView.swift */,
+				F27D81262668C40E002E5727 /* EducationView.swift */,
+				F27D81282668C432002E5727 /* MobilityView.swift */,
+				F27D812C2668C482002E5727 /* ReligionView.swift */,
+				F27D812A2668C44E002E5727 /* PoliticView.swift */,
+				F27D812E2668CD8A002E5727 /* EthnicityView.swift */,
+				F27D81302668CD9C002E5727 /* ViceView.swift */,
+				F20C549C26621B3F00EA736C /* AboutMeView.swift */,
+				F25751852681A38B0058067E /* HeightView.swift */,
+				F21643902681BADB00FD8544 /* CommunityView.swift */,
+				F21643922681C53000FD8544 /* InterestView.swift */,
+			);
+			path = "Boarding View";
+			sourceTree = "<group>";
+		};
+		F2C760A2268487A6002D70DE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F2A032DA265E2F0D00CFB7EC /* TabMainView.swift */,
+				F2A032E0265E305400CFB7EC /* DashboardView.swift */,
+				F2A032E2265E309900CFB7EC /* ChatRoomView.swift */,
+				F2C7609D26844DF8002D70DE /* ChatView.swift */,
+				F2A032E4265E30B500CFB7EC /* FavoriteView.swift */,
+				F23C9472265D2AA500B249F4 /* ProfileView.swift */,
+				F21643962681E61400FD8544 /* HelpCenterView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +367,7 @@
 				F2A032E5265E30B500CFB7EC /* FavoriteView.swift in Sources */,
 				F20C549D26621B3F00EA736C /* AboutMeView.swift in Sources */,
 				F211D5C026612690000A1EC9 /* ChildrenView.swift in Sources */,
+				F2C7609E26844DF8002D70DE /* ChatView.swift in Sources */,
 				F27D81212668C277002E5727 /* MoreKidView.swift in Sources */,
 				F21643912681BADB00FD8544 /* CommunityView.swift in Sources */,
 				F2A032DB265E2F0D00CFB7EC /* TabMainView.swift in Sources */,
@@ -356,6 +379,7 @@
 				F20C5499266215DE00EA736C /* LocationView.swift in Sources */,
 				F23C9473265D2AA500B249F4 /* ProfileView.swift in Sources */,
 				F20C549B266217BC00EA736C /* InsetMapView.swift in Sources */,
+				F2C760A026847DB2002D70DE /* SignInView.swift in Sources */,
 				F27D81312668CD9C002E5727 /* ViceView.swift in Sources */,
 				F211D5C226614530000A1EC9 /* AgeRangeView.swift in Sources */,
 				F21643972681E61400FD8544 /* HelpCenterView.swift in Sources */,

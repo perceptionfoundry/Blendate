@@ -11,7 +11,7 @@ import SwiftUI
 struct BlendateApp: App {
     var body: some Scene {
         WindowGroup {
-            NameView()
+            SignInView()
 
         }
     }

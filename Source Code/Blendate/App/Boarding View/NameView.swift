@@ -15,7 +15,7 @@ struct NameView: View {
 
     var body: some View {
         
-        NavigationView{
+        
             VStack{
                 Text("What is your Name")
                     .font(.custom("LexendDeca-Regular", size: 32))
@@ -35,7 +35,7 @@ struct NameView: View {
           
                 Spacer()
                 NavigationLink(
-                    destination: TabMainView(), //AgeView()
+                    destination: AgeView(),
                     isActive: $isSegue,
                     label: {
                         Button(action: {
@@ -75,9 +75,7 @@ struct NameView: View {
                 }
                 
             })
-            .navigationBarHidden(true)
-            .navigationBarBackButtonHidden(true)
-        }
+       
     }
 }
 
